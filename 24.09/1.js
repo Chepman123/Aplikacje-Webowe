@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 http.createServer(function(req,res){
   switch(req.url){
-    case "http://localhost:8080":
+    case "/":
         res.writeHead(200, {'Content-Type': 'text/plain'});
         res.write("Strona główna");
         res.end();
